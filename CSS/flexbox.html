@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="flexbox flow of css">
+    <title>flexbox</title>
+    <style>
+        body {
+        margin: 0;
+      }
+
+      header {
+        background: rgb(128, 92, 0);
+        height: 100px;
+      }
+
+      h1 {
+        text-align: center;
+        color: white;
+        line-height: 100px;
+        margin: 0;
+      }
+
+      article {
+        padding: 10px;
+        margin: 10px;
+        background: rgb(96, 109, 109);
+      }
+
+      .section1{
+        display: flex;
+        flex-direction: row;
+      }
+
+     
+     
+      .section2{
+        display: flex;
+        flex-direction:row;
+      }
+      article {
+  flex: 1;
+}
+
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sample Flexbox Example</h1>
+    </header>
+
+
+<div>
+    <div class="section1">
+        <section >
+            <article>
+                <h2>first article</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit et tempora autem. Qui deleniti eum ratione temporibus eveniet voluptates rerum cum eius repellendus, ducimus voluptatum necessitatibus hic debitis sapiente corrupti?</p>
+            </article>
+    
+            <article>
+                <H2>Second Article</H2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui maxime laboriosam sint necessitatibus asperiores blanditiis voluptates, nobis perspiciatis. Incidunt rerum dolor assumenda nisi nostrum, ab vitae veniam. Totam, officiis quisquam?</p>
+            
+            </article>
+            <article>
+                <h2>
+                    Third Article
+                </h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate atque itaque repellendus iste recusandae nostrum necessitatibus quidem, quibusdam illo doloribus maxime voluptates sit voluptate neque laboriosam iusto expedita ipsam error!</p>
+            </article>
+    </section>
+</div>
+    <div class="section2">
+        <!-- <section> -->
+            <div>
+            <article>
+                <h2>S1 article</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit et tempora autem. Qui deleniti eum ratione temporibus eveniet voluptates rerum cum eius repellendus, ducimus voluptatum necessitatibus hic debitis sapiente corrupti?</p>
+            </article>
+        </div>
+            <div>
+    
+            <article>
+                <H2>S2 Article</H2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui maxime laboriosam sint necessitatibus asperiores blanditiis voluptates, nobis perspiciatis. Incidunt rerum dolor assumenda nisi nostrum, ab vitae veniam. Totam, officiis quisquam?</p>
+            
+            </article>
+        </div>
+            <div>
+           
+            <article>
+                <h2>
+                    S3 Article
+                </h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate atque itaque repellendus iste recusandae nostrum necessitatibus quidem, quibusdam illo doloribus maxime voluptates sit voluptate neque laboriosam iusto expedita ipsam error!</p>
+            </article>
+        </div>
+    <!-- </section> -->
+    </div>
+   
+</div>
+</body>
+</html>

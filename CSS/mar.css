@@ -1,0 +1,44 @@
+*{
+    border: 1px solid aquamarine;
+}
+.box1{
+    margin: auto;
+
+}
+
+.box2{
+
+        /* margins*/
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+
+      /* padding*/
+
+      padding-top: 20px;
+      padding-bottom: 10px;
+      
+}
+
+.box2 p{
+    color: red;
+    font-size: large;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: center;
+
+    /* */
+}
+
+.box{
+
+    /* margins*/
+margin: 20px 10px 10px 30px;
+
+  /* padding*/
+
+  padding: 10px 10px 10px 10px;
+  color: red;
+    font-size: large;
+}

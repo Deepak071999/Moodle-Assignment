@@ -1,0 +1,86 @@
+/*
+h1{
+    color: blue ;
+}
+
+                                  // using selectors individually                        
+
+.class{
+    color: blue;
+}
+*/
+
+h1, .class{
+    color: blue;
+}
+
+/*
+ID SELECTOR
+*/
+
+#class2{
+    color: brown;
+}
+
+/*ATTRIBUTE SELECTOR*/
+
+a[href="https://www.facebook.com/login/"]{
+    color: green;
+}
+
+/*
+UNIVERASAL SELECTOR
+*/
+
+
+*{
+    padding: auto;    
+}
+/*
+ATTRIBUTE SELECTOR MACTICHING STRING PROPERTY 
+*/
+
+li[class*="a"] {
+    color: red;
+  }
+
+  li[class^="a"]{
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+li[class$="a"] {
+    background-color: yellow;
+  }
+/*
+  selector by pseudo-classes
+*/
+article p:first-child {
+    font-size: 120%;
+    font-family: sans-serif;
+  }
+  article p:last-child {
+    font-size: 120%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+  }
+/*
+  selector by pseudo-element (hover)
+*/
+  a:hover {
+    color:hotpink;
+    font-size: x-large;
+  }
+
+  .box::before{
+    content: "this before amything::>>";
+    color: green;
+  }
+
+  .box::after{
+    content: "this is after <<::amything::>>";
+    color: red;
+  }
+  
+
+
+

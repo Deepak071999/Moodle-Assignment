@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>line-based-placement</title>
+
+    <style>
+         body {
+        width: 90%;
+        max-width: 900px;
+        margin: 2em auto;
+        font: 0.9em/1.2 Arial, Helvetica, sans-serif;
+      }
+
+      .container {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        gap: 20px;
+      }
+
+      header,
+      footer {
+        border-radius: 5px;
+        padding: 10px;
+        background-color: rgb(207, 232, 220);
+        border: 2px solid rgb(79, 185, 227);
+      }
+
+      aside {
+        border-right: 1px solid #999;
+      }
+
+      header{
+        grid-column:1/3;
+        grid-row: 1;
+      }
+      article{
+        grid-column: 2;
+        grid-row: 2;
+      }
+      aside{
+        grid-column: 1;
+        grid-row: 2;
+      }
+      footer{
+        grid-column: 1/3;
+        grid-row: 3;
+      }
+
+        
+         
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>This is my Blog</header>
+        <article>
+            <h1>Notebook </h1>
+            <p>A notebook (also known as a notepad, writing pad, drawing pad, or legal pad) is a book or stack of paper pages that are often ruled and used for purposes such as note-taking, journaling or other writing, drawing, or scrapbooking.</p>
+            <p>Artists often use large notebooks,[citation needed] which include wide spaces of blank paper appropriate for drawing. They may also use thicker paper, if painting or using a variety of mediums in their work. Although large, artists' notebooks also are usually considerably light, because they usually take their notebooks with them everywhere to draw scenery. Similarly composers utilize notebooks for writing their lyrics. Lawyers use rather large notebooks known as legal pads that contain lined paper (often yellow) and are appropriate for use on tables and desks.</p>
+            
+        </article>
+        <aside>
+            <h2>Other Things</h2>
+            <p>
+                Notebooks used for drawing and scrapbooking are usually blank. Notebooks for writing usually have some kind of printing on the writing material, if only lines to align writing or facilitate certain kinds of drawing. Inventor's notebooks have page numbers preprinted to support priority claims. They may be considered as grey literature.[16] Many notebooks have graphic decorations. Personal organizers can have various kinds of preprinted pages
+            </p>
+        </aside>
+        <footer>Contact me <a href="mailto:dellavi@gmail.com">@mynotebook.com</a></footer>
+    </div>
+</body>
+</html>

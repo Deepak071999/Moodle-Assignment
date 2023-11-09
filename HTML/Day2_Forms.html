@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="discription" content="Forms elements of HTML">
+</head>
+<body>
+    <h2>Forms Example 1</h2>
+
+
+    <form action="http://127.0.0.1:5500/HTML/Submited.html" target="_blank">
+       
+        <!    the outer area is covered by fieldset >
+        <fieldset>
+            <legend><h4>FormExample:</h4></legend><br>                              <!  CAPTION FOR FIELD SET  >
+
+
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name"><br>                              <! TEXT BOX    >
+            <br>
+    
+            <label for="mail">E-mail</label>
+            <input type="text" id="mail" name="mail"><br><br>
+
+            <label for="pwd">Password</label>
+            <input type="password" name="pwd" id="pwd">                             <!   PASSWORD  >
+    
+            <h2> Radio Button</h2>
+             <p>Choose your favorite Web language:</p>                              <! RADIOBUTTON    >
+    
+            <input type="radio" id="html" name="fav_language" value="HTML">
+            <label for="html">HTML</label><br>
+            <input type="radio" id="css" name="fav_language" value="CSS">
+            <label for="css">CSS</label><br>
+            <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+            <label for="javascript">JavaScript</label>
+    
+            <h2>Checkbox</h2>                                                        <! CHECKBOX    >
+            <input type="checkbox" id="Day1" name="Day1" value="Monday">
+            <label for="Day1">Today is Monday</label><br>
+            <input type="checkbox" name="Day2" id="Day2" value="Tuesday">
+            <label for="Day2">Today is Tuesday</label>
+    
+            <br>
+            <br>
+
+            <label for="browser">Select your browsers:</label><input list="browsers">   <!  DATALIST   >
+            <datalist id="browsers">
+                <option value="Edge">
+                <option value="Firefox">                                                <! OPTION   >
+                <option value="Chrome">
+                <option value="Opera">
+                <option value="Safari">
+            </datalist>
+
+            <br><br>
+
+
+    
+            <input type="submit" value="Submit">                                      <!  SUBMIT   >
+            <input type="reset" value="Reset">                                        <!  RESET   >
+    
+        </fieldset>
+    </form>
+
+
+
+        
+</body>
+</html>

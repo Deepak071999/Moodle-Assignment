@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="nested flexbpx">
+    <title>flexbox</title>
+
+    <style>
+        body {
+        font-family: sans-serif;
+      }
+
+      body {
+        margin: 0;
+      }
+
+      header {
+        background: blue;
+        height: 100px;
+      }
+
+      h1 {
+        text-align: center;
+        color: white;
+        line-height: 100px;
+        margin: 0;
+      }
+
+      article {
+        padding: 10px;
+        margin: 10px;
+        background: rgb(0, 255, 153);
+      }
+      section{
+        display: flex;
+      }
+
+      article{
+        flex: 1 200px;
+      }
+
+      article:nth-of-type(3){
+        flex:3 200px;
+        display: flex;
+        flex-flow: column;
+      }
+
+      article:nth-last-of-type(3) div:first-child{
+        flex: 1;
+        display: flex;
+        
+        flex-flow:column;
+        align-items: center;
+        justify-content: space-around;
+      }
+
+      
+
+      button {
+        flex: 1 auto;
+        margin: 5px;
+        font-size: 18px;
+        line-height: 1.5;
+        
+        align-items: center;
+        justify-content: space-around; 
+        
+        
+        }
+
+         
+        button #Blush{
+            width: 100%;
+       }
+    </style>
+
+
+</head>
+<body>
+    <header>
+        <h1><em>Nested Flexbox Example</em>
+        </h1>
+    </header>
+
+    <section>
+
+        <article>
+            <h2>First article</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo sapiente, veritatis delectus, quia adipisci praesentium, reprehenderit quibusdam harum beatae suscipit at id cumque ratione possimus sequi perferendis excepturi aperiam unde.</p>
+    
+        </article>
+
+        <article>
+            <h2>Second article</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, ipsam assumenda voluptatem iure ex, culpa, eligendi quas voluptates nobis nisi sed laudantium velit a in. Modi repudiandae quidem eveniet vitae.</p>
+        </article>
+
+        <article>
+            <div>
+                <button>Smile</button>
+                <button>laugh</button>
+                <button>Wink</button>
+                <button>Shrug</button>                
+            </div>
+
+            <div id="Blush">
+                <button>Blush</button>
+
+                </div>
+
+           
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, repudiandae dolore ratione ab ea accusantium, temporibus quae minima, qui aliquam veritatis. Veniam quibusdam, minima ea quos nam voluptates aliquam suscipit!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit culpa pariatur, dolores ut, minima explicabo eaque animi aspernatur qui vel debitis sit eius repellendus placeat consectetur soluta sequi beatae natus.</p></article>
+        </section>
+
+    
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="discription" content="this page contain information about the responsiveness of image by html">
+    <meta charset="utf-8">
+    <title>responsiveness</title>
+
+    <body>
+        <h1>responsive images</h1>
+
+        <img
+            srcset="ironman-320w.jpg 320w, ironman.jpg 800w"
+            sizes="(max-width: 600px) 480px,
+                    800px"
+            src="ironman.jpg"
+            alt="ironman 3 " />
+
+            <picture>
+                <source media="(max-width:800px)" srcset="ironman-close-portrait.jpg"/>
+                <source media="(min-width:300px)" srcset="ironman.jpg"/>
+                <img src="ironman.jpg" alt="ironman"/>
+
+            </picture>
+    </body>
+</head>
+</html>

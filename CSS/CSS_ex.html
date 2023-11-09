@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown
+    </title>
+<style>
+.drop{
+    position: relative;
+    display: inline-block;
+}
+
+.drop_content{
+    display: none;
+    position: absolute;
+    background-color: red;
+    max-width: 300px;
+    padding: 3px;
+    z-index: 1;
+    
+}
+.drop:hover .drop_content{
+    display: block;
+}
+h1{
+    color: red;
+}
+
+h3{
+    color: rgb(230, 245, 19);
+}
+
+</style>
+
+</head>
+<body>
+    <h2>hoverable dropdown</h2>
+
+    <p>move the mouse over the red dots</p>
+
+    <div
+    class="drop">
+<span><h1>(.)</h1></span>
+
+<div class="drop_content">
+    <p><h3>DO NOT DISTURB!!!</h3></p>
+</div>
+</div>
+</body>
+</html>

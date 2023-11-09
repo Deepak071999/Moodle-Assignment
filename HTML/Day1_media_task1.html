@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Media/embedding: Task 1</title>
+    <style>
+      body {
+        background-color: #fff;
+        color: #333;
+        font: 1em / 1.4 Helvetica Neue, Helvetica, Arial, sans-serif;
+        padding: 1em;
+        margin: 0;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      audio {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Basic audio embed</h1>
+
+    <audio controls>
+
+        width="400"
+
+        height="100"
+
+        autoplay
+
+        loop
+
+        muted
+
+        <source src="media/audio.mp3.mp3" type="audio/mp3" />
+
+        
+
+    </audio>
+
+    <p>in case your browser does not support audio here is <a href="media/audio.mp3.mp3">link </a> for the audio</p>
+
+
+    <div class="pdf">   
+        <a href="media/sample.pdf">PDF</a> <br>
+
+        <object data="media/sample.pdf" type="application/pdf" width="500" height="800"> <br>
+            <p>
+              You don't have a PDF plugin, but you can
+              <a href="media/sample.pdf">download the PDF file. </a>
+            </p>
+          </object>
+
+        <IFrame 
+            id="frame ex."
+            title="inline frame"
+            width="320"
+            height="240"
+            src="https://www.google.com/search?q=narwal&source=lmns&bih=635&biw=1226&client=opera&hs=W1w&hl=en&sa=X&ved=2ahUKEwiXpu3G2a6CAxUr5zgGHQdoAL4Q0pQJKAB6BAgBEAI"
+        >
+
+        
+        </IFrame>
+
+    </div>
+
+
+  </body>
+
+</html>
